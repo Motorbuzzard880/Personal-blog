@@ -12,13 +12,10 @@
 header {
     padding: 15px 35px 0 35px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     max-width: 70vw;
     margin: auto;
-
-
-    
 }
 
 h1 {
@@ -35,6 +32,7 @@ h1 {
     from { width: 0 }
     to { width: 100% }
     }
+
 
 
 nav ul {

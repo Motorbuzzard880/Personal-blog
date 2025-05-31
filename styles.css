@@ -190,6 +190,7 @@ footer {
 
 .h3-c {
     padding-bottom: 1.5em;
+    padding-top: 5em;
 }
 
 .date {
@@ -244,22 +245,14 @@ footer {
         padding: 7em;
     }
     
-}
-
-
-@media (max-width: 600px) {
-    header {
-    width: 100%;
-    padding: 0;
-    display: flex;
-    margin: auto;
-    margin-top: 8px;
-    justify-content: space-between;
+    .notas {
+        margin: auto;
+        padding-top: 100px;
     }
-    
-    h1 {
-        padding-right: 60px;
-        margin-left: 0;
+
+    .changes {
+        padding: 10px;
+        margin: auto;
     }
 }
 
@@ -267,24 +260,35 @@ footer {
 @media (max-width: 600px) {
     header {
         width: 100%;
-        padding: 0 10px;          
+        padding: 0 10px;
         display: flex;
         margin: auto;
         margin-top: 8px;
         justify-content: center;
         align-items: center;
-        max-width: 100vw;          
-        box-sizing: border-box;    
+        max-width: 100vw;
+        box-sizing: border-box;
     }
-    
+
     h1 {
-        padding: 0 5px;           
+        padding: 0 5px;
         margin: 0 auto;
         text-align: center;
         width: 100%;
-        font-size: 2rem;           
-        overflow-wrap: break-word; 
-        white-space: nowrap;       
-        animation: typing 1s steps(25) forwards; 
+        font-size: 2rem;
+        overflow-wrap: break-word;
+        white-space: nowrap;
+        animation: typing 1s steps(25) forwards;
+    }
+    
+    .notas {
+        max-width: 55%;
+        margin: auto;
+        padding-top: 100px;
+    }
+
+    .changes {
+        padding: 10px;
+        margin: auto;
     }
 }

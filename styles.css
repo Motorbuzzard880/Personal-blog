@@ -98,12 +98,6 @@ a {
     text-align: center;
 }
 
-.arrow /*span */{
-    background-color: #00acee;
-    color:#ffffff;
-    padding: 1px;
-}
-
 .github /*span */{
     font-weight: bold;
 }

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luciano Navarro</title>
+        <link rel="stylesheet" href="../styles.css">
+    </head>
+</head>
+
+<body>
+
+    <header>
+        <h1><a href="../index.html">{Luciano Navarro}</a></h1>
+
+    </header>
+    <main>
+        <section>
+            <article class="article">
+    <h2>Mini guía de JSON en Python 🐍📦</h2>
+
+<h2>¿Qué es JSON?</h2>
+<p>JSON (JavaScript Object Notation) es un formato ligero para almacenar y transportar datos. Es muy usado para:</p>
+<ul>
+    <li>Guardar configuraciones</li>
+    <li>Intercambiar datos en APIs</li>
+    <li>Almacenamiento simple de información</li>
+</ul>
+
+<p>En Python, usamos el módulo <code>json</code> para convertir entre:</p>
+<ul>
+    <li>Objetos Python (listas, diccionarios, números, strings)</li>
+    <li>Texto con formato JSON</li>
+</ul>
+
+<hr>
+
+<h2>Las 4 funciones básicas</h2>
+
+<h3>1. <code>json.dumps()</code></h3>
+<p><strong>Convierte un objeto Python → cadena JSON</strong></p>
+<p>Uso típico:</p>
+<ul>
+    <li>Enviar datos por red</li>
+    <li>Mostrar en pantalla</li>
+    <li>Almacenar en bases de datos</li>
+</ul>
+
+<pre><code>import json
+
+data = {"nombre": "Ana", "edad": 25, "activo": True}
+json_str = json.dumps(data)
+print(json_str)  # Salida: '{"nombre": "Ana", "edad": 25, "activo": true}'
+</code></pre>
+
+<h3>2. <code>json.loads()</code></h3>
+<p><strong>Convierte una cadena JSON a un objeto Python</strong></p>
+
+<pre><code>json_str = '{"nombre": "Ana", "edad": 25, "activo": true}'
+
+data = json.loads(json_str)
+print(data["nombre"])  # Salida: Ana
+print(type(data))      # Salida: &lt;class 'dict'&gt;
+</code></pre>
+
+<h3>3. <code>json.dump()</code></h3>
+<p><strong>Guarda un objeto Python en un archivo JSON</strong></p>
+
+<pre><code>data = {"nombre": "Ana", "edad": 25, "activo": True}
+
+with open("datos.json", "w") as f:
+    json.dump(data, f, indent=4)  # indent=4 para formato legible
+</code></pre>
+
+<h3>4. <code>json.load()</code></h3>
+<p><strong>Lee un archivo JSON y lo convierte a un objeto Python</strong></p>
+
+<pre><code>with open("datos.json", "r") as f:
+    data = json.load(f)
+
+print(data["edad"])  # Salida: 25
+</code></pre>
+
+<h2>Parámetros útiles</h2>
+<ul>
+    <li><code>indent</code>: agrega sangría para que el JSON sea legible</li>
+    <li><code>sort_keys=True</code>: ordena las claves alfabéticamente</li>
+    <li><code>ensure_ascii=False</code>: muestra caracteres unicode correctamente (acentos, ñ)</li>
+</ul>
+
+<pre><code>json.dumps(data, indent=2, sort_keys=True, ensure_ascii=False)
+</code></pre>
+</article>
+
+        </section>
+    </main>
+    <footer>
+        <h3 class="h3-footer">Ey! Hola, <br>soy Luciano&#128075;</h3>
+        <p class="footer-text">Este espacio nació como un proyecto personal para aplicar lo que iba aprendiendo en mi
+            camino como desarrollador. Originalmente, a mediados del año pasado, estaba enfocado en frontend y así
+            construí esta página desde cero. Hoy mi rumbo ha cambiado y me encuentro actualmente aprendiendo Python.</p>
+        <br>
+        <p class="footer-text">Aunque ahora mi enfoque está en Python, espero que este sitio siga evolucionando junto a mi
+            aprendizaje. Porque al final, la verdadera maestría no viene de los tutoriales, sino de atreverse a crear,
+            equivocarse y volver a intentarlo. ¡Bienvenidos a mi taller digital! 🛠️💻</p> <br>
+    </footer>
+</body>

@@ -196,11 +196,18 @@ footer {
 /*---------------Notas-------------------*/
 
 .article {
-    justify-content:baseline;
-    align-items: center;
-    margin: auto;
-    padding: 5em 1em 10em 1em;
+    padding: 1.5rem;
+    line-height: 1.6;
 }
+
+.article h2,
+.article h3,
+.article p,
+.article ul,
+.article pre {
+    margin-bottom: 1rem;
+}
+
 
 
 .art-parraf {
@@ -216,6 +223,20 @@ footer {
     padding-top: 1em;
     padding-bottom: 1em;
 
+}
+
+pre {
+    background-color: #f7f7f7;
+    padding: 1rem;
+    border-radius: 5px;
+    overflow-x: auto;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+code {
+    font-family: Consolas, Monaco, 'Courier New', monospace;
+    font-size: 0.9rem;
 }
 
 

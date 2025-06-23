@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luciano Navarro</title>
+        <link rel="stylesheet" href="../styles.css">
+    </head>
+</head>
+
+<body>
+
+    <header>
+        <h1><a href="../index.html">{Luciano Navarro}</a></h1>
+
+    </header>
+    <main>
+        <section>
+            <article class="article">
+    <h2>📒Primeros pasos en Flask</h2>
+
+<p><strong>1️⃣Primero: Crear un entorno</strong></p>
+
+<p>Para instalar dependencias primero y recomendable segun el Quickstart. Creamos un entorno virtual. En mi caso en (VS Code + Windows). Entonces, creamos una carpeta de proyecto. Entonces en VS Code: ver -- &gt; Terminal y escribimos:</p>
+
+<pre><code>mkdir myproject
+cd myproject #Accedemos a esa carpeta desde la terminal
+py -3 -m venv .venv
+</code></pre>
+
+<p>Esto nos crea todas las subcarpetas correspondientes para el proyecto.</p>
+
+<p><strong>2️⃣Segundo: Activacion del entorno</strong></p>
+
+<p>(La primera vez lo hice mal y me olvide de activar entonces me daba error por todos lados 😅). Ok para activar el entorno, otra vez consola y ejecutamos:</p>
+
+<pre><code>.venv\Scripts\activate
+</code></pre>
+
+<p>y si todo va bien, se activa el entorno virtual. El prompt de consola cambia y se ve algo asi.</p>
+
+<pre><code>(.venv) C:\ruta\del\proyecto&gt;
+</code></pre>
+
+<p><strong>3️⃣Tercero: Instalacion de Flask en el entorno virtual</strong></p>
+
+<p>instalamos Flask con el comando</p>
+
+<pre><code>pip install Flask
+</code></pre>
+
+<p>esto instala todas las dependecians, y demas, por defecto. (como Jinja2, Werkzeug, etc.)</p>
+
+<h3>PD:</h3>
+
+<p><strong>Para desactivar el entorno virtual</strong> ponemos en consola <code>deactivate</code></p>
+
+</article>
+
+        </section>
+    </main>
+    <footer>
+        <h3 class="h3-footer">Ey! Hola, <br>soy Luciano&#128075;</h3>
+        <p class="footer-text">Este espacio nació como un proyecto personal para aplicar lo que iba aprendiendo en mi
+            camino como desarrollador. Originalmente, a mediados del año pasado, estaba enfocado en frontend y así
+            construí esta página desde cero. Hoy mi rumbo ha cambiado y me encuentro actualmente aprendiendo Python.</p>
+        <br>
+        <p class="footer-text">Aunque ahora mi enfoque está en Python, espero que este sitio siga evolucionando junto a mi
+            aprendizaje. Porque al final, la verdadera maestría no viene de los tutoriales, sino de atreverse a crear,
+            equivocarse y volver a intentarlo. ¡Bienvenidos a mi taller digital! 🛠️💻</p> <br>
+    </footer>
+</body>
